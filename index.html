@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Моя песня</title>
+    <title>Red - Crystal Castles × La Roux (mashup)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Чтобы текст и плеер стояли друг под другом */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212; /* Темный фон */
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .title {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            color: #aaaaaa;
+            font-style: italic;
+            font-size: 16px;
+            margin-bottom: 30px;
+            max-width: 90%;
+        }
+
+        audio {
+            width: 90%; /* Плеер на 90% ширины экрана */
+            max-width: 500px;
+            outline: none;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Блок с текстом -->
+    <div class="title">Red (Crystal Castles × La Roux mashup)</div>
+    <div class="subtitle">"This time baby, I'll be bulletproof"</div>
+
+    <!-- Сам плеер -->
     <audio autoplay controls>
         <source src="2_5206522779716858507.mp3" type="audio/mpeg">
     </audio>
+
 </body>
 </html>
